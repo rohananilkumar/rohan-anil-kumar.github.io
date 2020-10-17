@@ -121,6 +121,7 @@ body{
 
 .content-selector{
     display: inline-flex;
+    align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
     border-radius: 5px;
@@ -128,13 +129,24 @@ body{
     color: #ff4545;
     float: left;
     font-size: 19px;
-    width: 91px;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
     transition: width .3s;
 }
 
+.content-selector-text{
+    transition: margin-left .3s;
+}
+.content-selector-text:hover{
+
+    font-weight: 600;
+    /* letter-spacing: 3px; */
+    /* justify-content: space-around; */
+    margin-left: 10px;
+    /*background-color: #ff4545;
+    color: white;*/
+}
 .content-selector-btn-container{
 
 }
@@ -156,15 +168,7 @@ button:focus{
     outline:none;
 }
 
-.content-selector:hover{
 
-    font-weight: 600;
-    /* letter-spacing: 3px; */
-    /* justify-content: space-around; */
-    width: 100px;
-    /*background-color: #ff4545;
-    color: white;*/
-}
 
 
 

@@ -309,7 +309,7 @@ var controller = (function(UICtrl){
 
             var isMobile =  window.mobileCheck();
 
-            if(isMobilek){
+            if(isMobile){
                 UICtrl.doms.headContainer.style.height='50%';
                 UICtrl.doms.contentSelector.forEach((obj)=>{
                     obj.style.fontSize=30;
