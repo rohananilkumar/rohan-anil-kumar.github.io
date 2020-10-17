@@ -197,6 +197,9 @@ var UIController = (function(){
         slideInPanel1 : document.querySelector('#slide-in-panel-1'),
         slideInPanelContainer : document.querySelector('#slide-in-panel-container'),
         projectPage: document.getElementById('slide-in-panel-3'),
+        introPage: document.getElementById('slide-in-panel-1'),
+        socialPage: document.getElementById('slide-in-panel-4'),
+        aboutPage: document.getElementById('slide-in-panel-2'),
         projectsContainers: document.querySelectorAll('.slide-in-project-container')
      }
 
@@ -206,21 +209,26 @@ var UIController = (function(){
         //window.scrollBy(0,200);
         doms.slideInPanels.forEach((panel)=>{
             if(panel.id===('slide-in-panel-'+panelId)){
-                panel.classList.add('slide-in-panel-visible');
+                doms.slideInPanelContainer.insertAdjacentElement('beforeend',panel);
+                setTimeout(()=>{panel.classList.add('slide-in-panel-visible')},10);
+                
             }
             else{
                 panel.classList.remove('slide-in-panel-visible');
-                panel.style.height = curPanel.style.height;
+                if(panel.parentNode===doms.slideInPanelContainer){
+                    doms.slideInPanelContainer.removeChild(panel);
+                }
+                
             }
         })
      }
-
 
     return{
 
         doms: doms,
         projectBtnLink:projectBtnLink,
 
+        
         mainTextAnimation : function(){
             doms.sideMainText.classList.add('side-main-text-visible');
             doms.sideMainText.classList.remove('side-main-text-invisible');
@@ -232,6 +240,7 @@ var UIController = (function(){
         },
 
         windowSizeController: function(){
+            //projectPanelResize();
             var width = window.innerWidth;
             var height = window.innerHeight;
             if(width<998){
