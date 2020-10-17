@@ -291,7 +291,7 @@ var UIController = (function(){
         contentSelector : document.querySelectorAll('.content-selector'),
         contentSelectorText : document.querySelectorAll('.content-selector-text'),
         slideInPanels: document.querySelectorAll('.slide-in-panel'),
-        introHeader: document.querySelector('intro-header'),
+        introHeader: document.querySelector('.intro-header'),
         introDescription:document.querySelector('.intro-description'),
         slideInPanel1 : document.querySelector('#slide-in-panel-1'),
         slideInPanelContainer : document.querySelector('#slide-in-panel-container'),
@@ -431,14 +431,12 @@ var controller = (function(UICtrl){
             var isMobile =  window.mobileCheck();
 
             if(isMobile){
-                    alert('Mobile start')
-                UICtrl.doms.headContainer.style.height='50%';
+                UICtrl.doms.headContainer.style.height='40%';
                 UICtrl.doms.introHeader.style.fontSize=40;
                 UICtrl.doms.introDescription.fontSize=35;
                 UICtrl.doms.contentSelector.forEach((obj)=>{
                     obj.style.fontSize=30;
                 })
-                    alert('Mobile Over')
             }
 
             var dob = 2002;
