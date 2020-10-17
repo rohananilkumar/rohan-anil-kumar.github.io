@@ -121,6 +121,7 @@ body{
 
 .content-selector{
     display: inline-flex;
+    align-items: center;
     justify-content: space-between;
     text-transform: uppercase;
     border-radius: 5px;
@@ -128,7 +129,6 @@ body{
     color: #ff4545;
     float: left;
     font-size: 19px;
-    width: 91px;
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
