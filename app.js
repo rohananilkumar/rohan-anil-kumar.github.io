@@ -156,7 +156,7 @@ var MyProjects = (function(){
         title:{value:'Budgety'},
         description:{value:'Budget Calculator and organiser. Note that the UI is not designed by Rohan and is not optimised for mobile.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/Budgety'}}), Object.create(Source,{text:{value:'Project Link'}, link:{value:'JsProjects/BudgetyApp/index.html'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/Budgety'}}), Object.create(Source,{text:{value:'Project Link'}, link:{value:'JSProjects/BudgetyApp/index.html'}})]},
         tags:{value:['JavaScript']}
     })
 
