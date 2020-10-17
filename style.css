@@ -8,7 +8,7 @@ body{
 }
 
 #head-container{
-    background-image: url('Images/background.jpg');
+    background-image: url('Images/main-container-image.JPG');
     background-color: rgb(46, 46, 46) ;
     background-position: center;
     background-size:cover;
