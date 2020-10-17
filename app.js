@@ -156,7 +156,7 @@ var MyProjects = (function(){
         title:{value:'Budgety'},
         description:{value:'Budget Calculator and organiser. Note that the UI is not designed by Rohan and is not optimised for mobile.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/Budgety'}}), Object.create(Source,{text:{value:'Project Link'}, link:{value:'JsProjects/BudgetyApp/index.html'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/Budgety'}}), Object.create(Source,{text:{value:'Project Link'}, link:{value:'JSProjects/BudgetyApp/index.html'}})]},
         tags:{value:['JavaScript']}
     })
 
@@ -291,7 +291,7 @@ var UIController = (function(){
         contentSelector : document.querySelectorAll('.content-selector'),
         contentSelectorText : document.querySelectorAll('.content-selector-text'),
         slideInPanels: document.querySelectorAll('.slide-in-panel'),
-        introHeader: document.querySelector('intro-header'),
+        introHeader: document.querySelector('.intro-header'),
         introDescription:document.querySelector('.intro-description'),
         slideInPanel1 : document.querySelector('#slide-in-panel-1'),
         slideInPanelContainer : document.querySelector('#slide-in-panel-container'),
@@ -431,7 +431,7 @@ var controller = (function(UICtrl){
             var isMobile =  window.mobileCheck();
 
             if(isMobile){
-                UICtrl.doms.headContainer.style.height='50%';
+                UICtrl.doms.headContainer.style.height='40%';
                 UICtrl.doms.introHeader.style.fontSize=40;
                 UICtrl.doms.introDescription.fontSize=35;
                 UICtrl.doms.contentSelector.forEach((obj)=>{
@@ -449,7 +449,9 @@ var controller = (function(UICtrl){
 
 
             //debug
-            UICtrl.bringInPanel('1');
+            var ele = document.getElementById('btn-1');
+            UICtrl.addUnderline(ele);
+            UICtrl.bringInPanel(ele.id[ele.id.length-1])
         }
     }
 })(UIController);
