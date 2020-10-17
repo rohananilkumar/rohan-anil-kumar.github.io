@@ -431,12 +431,14 @@ var controller = (function(UICtrl){
             var isMobile =  window.mobileCheck();
 
             if(isMobile){
+                    alert('Mobile start')
                 UICtrl.doms.headContainer.style.height='50%';
                 UICtrl.doms.introHeader.style.fontSize=40;
                 UICtrl.doms.introDescription.fontSize=35;
                 UICtrl.doms.contentSelector.forEach((obj)=>{
                     obj.style.fontSize=30;
                 })
+                    alert('Mobile Over')
             }
 
             var dob = 2002;
