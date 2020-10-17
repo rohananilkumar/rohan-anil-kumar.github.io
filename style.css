@@ -45,6 +45,11 @@ body{
     transition: padding-right .7s, opacity .7s;
 }
 
+.side-main-text-mobile{
+    border-left: 5px solid #1cd900;
+    padding-left: 24px;
+}
+
 .side-main-text-visible{
     padding-right: 24px;
     opacity: 1;
@@ -284,8 +289,8 @@ button:focus{
 
 .slide-in-project-container{
     float: left;
-    width: 294px;
-    height: 335px;
+    width: 326px;
+    height: 345px;
     
     border-radius: 5px;
     background-color: #dedede;

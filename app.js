@@ -61,31 +61,31 @@ var MyProjects = (function(){
 
     var memoryGame = Object.create(Project,{
         title:{value:'Memory Game'},
-        description:{value:'blah blah blah'},
+        description:{value:'The good old memory game where one has to eliminate all cards by choosing two idendical cards at the same time'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/MemoryGame'}}), Object.create(Source,{text:{value:'Game'}, link:{value:''}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/MemoryGame'}}), Object.create(Source,{text:{value:'Game'}, link:{value:'JSProjects/MemoryGame/index.html'}})]},
         tags:{value:['JavaScript']}
     })
 
     var budgety = Object.create(Project,{
         title:{value:'Budgety'},
-        description:{value:'blah blah blah'},
+        description:{value:'Budget Calculator and organiser. Note that the UI is not designed by Rohan and is not optimised for mobile'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/Budgety'}}), Object.create(Source,{text:{value:'Game'}, link:{value:''}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/Budgety'}}), Object.create(Source,{text:{value:'Project Link'}, link:{value:'JsProjects/BudgetyApp/index.html'}})]},
         tags:{value:['JavaScript']}
     })
 
     var libraryManager = Object.create(Project,{
         title:{value:'Library Manager'},
-        description:{value:'blah blah blah'},
+        description:{value:'Library Manager for schools. Manages books and students. Uses MySQL as database'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/LibraryManager'}})]},
-        tags:{value:['C#']}
+        tags:{value:['C#','MySQL']}
     })
 
     var ticTacToe = Object.create(Project,{
         title:{value:'TicTacToe'},
-        description:{value:'blah blah blah'},
+        description:{value:'Good Old TicTacToe digitized.<br> Is console based.'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/TicTacToe'}})]},
         tags:{value:['Python']}
@@ -93,7 +93,7 @@ var MyProjects = (function(){
 
     var blackJack = Object.create(Project,{
         title:{value:'BlackJack'},
-        description:{value:'blah blah blah'},
+        description:{value:'The gambling game.<br> Is console based.'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/BlackJack'}})]},
         tags:{value:['Python']}
@@ -101,7 +101,7 @@ var MyProjects = (function(){
 
     var crypto = Object.create(Project,{
         title:{value:'File Encryptor'},
-        description:{value:'blah blah blah'},
+        description:{value:'File Encryptor can encrypt/decrypt files and folers using AES encryption'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/CryptoFileEncryptor'}})]},
         tags:{value:['C#']}
@@ -109,7 +109,7 @@ var MyProjects = (function(){
 
     var weatherAnalyser = Object.create(Project,{
         title:{value:'Weather Analyser'},
-        description:{value:'blah blah blah'},
+        description:{value:'11th Grade Science project. Helps in finding and reporting harsh weather conditions'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/WeatherAnalyser'}})]},
         tags:{value:['C#','Python','C','Hardware']}
@@ -117,7 +117,7 @@ var MyProjects = (function(){
 
     var smartHome = Object.create(Project,{
         title:{value:'Smart Home'},
-        description:{value:'blah blah blah'},
+        description:{value:'10th grade science project. Can control everyting from lights to doors using software'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/SmartHome'}})]},
         tags:{value:['C#','C','Hardware']}
@@ -125,7 +125,7 @@ var MyProjects = (function(){
 
     var passwordEncryptor = Object.create(Project,{
         title:{value:'Password Encrptor'},
-        description:{value:'blah blah blah'},
+        description:{value:'Encrypts Password are returns the encrypted string which can then be decypted using a key'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/PasswordEncryptor'}})]},
         tags:{value:['C#']}
@@ -245,9 +245,11 @@ var UIController = (function(){
             var height = window.innerHeight;
             if(width<998){
                 doms.mainText.classList.add('main-text-narrow-window');
+                doms.sideMainText.classList.add('side-main-text-mobile');
                 console.log('small window');
             }
             else{
+                doms.sideMainText.classList.remove('side-main-text-mobile');
                 doms.mainText.classList.remove('main-text-narrow-window')
             }
             if(width<512){

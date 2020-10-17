@@ -1,0 +1,175 @@
+#body{
+    background-image: url('../backgrounds/background.jpg');
+}
+
+#container{
+    padding: 20px;
+    background-color: rgba(255,255,255,.8);
+    width:65%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 10px 50px rgba(0,0,0,0.3);
+    overflow: hidden;
+    height:650;
+}
+
+.card-closed{
+    background-color:  rgb(65, 65, 65);
+    border-color:rgb(65, 65, 65) ;
+}
+.card-open{
+    background-color: white;
+    border-color:white;
+}
+
+#inner-container{
+    background-color: rgb(78 78 78 / 70%);
+    width:360px;
+    border-color: rgb(78 78 78 / 70%);
+    border-width: 1px;
+    border-radius: 6px;
+    position: absolute;
+    border-style: solid;
+    height:419px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-47%) ;
+}
+
+#game-title{
+    font-family: 'LATO';
+    position: absolute;
+    left:50%;
+    transform: translate(-50%,0%);
+    color:#ff4747;
+    font-size: 40px;
+    width:75%;
+    text-align: center;
+}
+
+.card-hoverable:hover{
+    background-color:#ff4747;
+    border-color: #ff4747;
+
+}
+
+
+.card-disabled{
+    background-color:  rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+}
+
+.cards{
+    float:left;
+    width:50px;
+    height:50px;
+    margin:4px;
+    border-radius: 6px;
+    border-style: solid;
+    border-width: 1px;  
+}
+
+.timer-at-middle{
+    transform: translate(-54%,199%);
+    font-size: 70px;
+}
+.timer-at-top{
+    transform: translate(-54%,57%);
+    font-size:40px;
+}
+
+#game-over-panel{
+    display: none;
+    font-family: 'Lato';
+    font-size: 67px;
+    position: absolute;
+    left: 50%;
+    font-weight: 600;
+    background-color: #ff4747;
+    width: 500;
+    color: white;
+    border-radius: 6px;
+    text-align: center;
+    transform: translate(-50%,351%);
+}
+
+#timer-container{
+    font-family: Lato;
+    letter-spacing: 2px;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+    left:50%;
+    
+    position: absolute;
+    padding:5px;
+    width:400;
+    height:80px;
+}
+#clock-png{
+    position: absolute;
+    
+}
+#timer-panel{
+    position:relative;
+    left:173px;
+}
+
+#btn-panel{
+    transform: translate(-50%,690%);
+    position: absolute;
+    left: 50%;
+    width:320;
+}
+
+/*Unselectable(from internet)*/
+.unselect{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.btn{
+    border-radius: 3px;
+    border-style: solid;
+    border-color: #ff4747;
+
+    left:50%;
+    transform: translate(-58%,1058%);
+
+    box-shadow: 0px 10px 50px rgba(0,0,0,0.3);
+    /*width: 128px;*/
+    text-align: center;
+    background-color: #ff4747;
+    font-family: Lato;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 200;
+    margin: 10px;
+    float: left;
+    text-transform: uppercase;
+    /* margin-left: 10px; */
+    color: white;
+}
+.btn:hover{
+    font-weight:600;
+    width:135px;
+}
+
+#stop-btn{
+    display: none;
+    position: absolute;
+}
+#start-btn{
+    position: absolute;
+}
+#reset-btn{
+    display: none;
+    position: absolute;
+}
+
