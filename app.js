@@ -7,7 +7,6 @@ var projectTagTemplate=`
 <div class='project-tag'>
     %Tag%
 </div>`
-
 var projectContainerTemplate=`
 <div class='slide-in-project-container'>
                     <img class='project-image' src='%Image%'>
@@ -34,7 +33,93 @@ var projectContainerTemplate=`
                 </div>
 `
 
+var AboutTemplate = `
+<div class='slide-in-content-%Side%'>
+                    <div class='slide-in-heading'>
+                        <i class='slide-in-icon material-icons'>%Icon%</i>
+                        <div class='slide-in-header-text'>
+                        %Heading%
+                        </div>
+                    </div>
+                    <div class='slide-in-description'>
+                        %Description%
+                    </div>
+</div>
+`
 
+var About = {
+    icon: null,
+    heading: null,
+    descripton: null,
+    side: null
+}
+
+var MyAbouts = (function(){
+    var curSide = 'right';
+    var getSide = function(){
+        if(curSide==='left'){
+            curSide = 'right';
+            return 'right';
+        }
+        else{
+            curSide = 'left';
+            return 'left';
+        }
+    }
+
+    var background = Object.create(About,{
+        icon:   {value: 'public'},
+        heading: {value: 'Background'},
+        description: {value: 'Born and raised in Kerala, Rohan spent 99.999% of his life in Kerala. '},
+        side: {value: getSide()}
+    });
+
+    var education = Object.create(About,{
+        icon:   {value: 'school'},
+        heading: {value: 'Education'},
+        description: {value: 'Rohan is a Class 12th(Science) graduate from Kendriya Vidyalaya Ezhimala.<br>He learnt programming from Udemy, Codecademy, Youtube and from his school.'},
+        side: {value: getSide()}
+    });
+
+    var socialLife = Object.create(About,{
+        icon:   {value: 'emoji_people'},
+        heading: {value: 'Social Life'},
+        description: {value: 'Socially akward. Has small friend circle. Is a typical introvert.'},
+        side: {value: getSide()}
+    });
+
+    var goals = Object.create(About,{
+        icon:   {value: 'track_changes'},
+        heading: {value: 'Goals'},
+        description: {value: 'Rohan always thought that getting a good job was his main goal.<br>Lately he\'s getting into to the idea that being happy in life is his main goal.<br>Apart from that he\'s trying to master the art of computer science but is still trying to figure out which part of computer science he\'d like to specialize in.'},
+        side: {value: getSide()}
+    });
+
+    var skills = Object.create(About,{
+        icon:   {value: 'work'},
+        heading: {value: 'Skills'},
+        description: {value: 'Fluent in C#, Python and JavaScript. Know C upto the extend of programming an arduino. <br> Skilled in socket programming(client server).<br>Experienced in making projects with arduino.'},
+        side: {value: getSide()}
+    });
+
+    var freeTime = Object.create(About,{
+        icon:   {value: 'watch_later'},
+        heading: {value: 'Leisure Activities'},
+        description: {value: 'Extremely addicted to movies. Can watch at least 100 movies in 2 months.<br>YouTube is the next favourite social media. <br> Will find him occassionally scrolling through reddit.'},
+        side: {value: getSide()}
+    });
+
+    return {
+        aboutList : [
+            background,
+            education,
+            socialLife,
+            goals,
+            skills,
+            freeTime
+        ]
+    }
+})();
 
 
 var Project = {
@@ -53,33 +138,33 @@ var MyProjects = (function(){
 
     var mediaStream = Object.create(Project,{
         title:{value:'The Media Stream'},
-        description:{value:'A server client software which can save and retrieve files from the server'},
+        description:{value:'A server client software which can save and retrieve files from the server.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/TheMediaStream'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/TheMediaStream'}})]},
         tags:{value:['Python']}
     })
 
     var memoryGame = Object.create(Project,{
         title:{value:'Memory Game'},
-        description:{value:'The good old memory game where one has to eliminate all cards by choosing two idendical cards at the same time'},
+        description:{value:'The good old memory game where one has to eliminate all cards by choosing two idendical cards at the same time.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/MemoryGame'}}), Object.create(Source,{text:{value:'Game'}, link:{value:'JSProjects/MemoryGame/index.html'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/MemoryGame'}}), Object.create(Source,{text:{value:'Game'}, link:{value:'JSProjects/MemoryGame/index.html'}})]},
         tags:{value:['JavaScript']}
     })
 
     var budgety = Object.create(Project,{
         title:{value:'Budgety'},
-        description:{value:'Budget Calculator and organiser. Note that the UI is not designed by Rohan and is not optimised for mobile'},
+        description:{value:'Budget Calculator and organiser. Note that the UI is not designed by Rohan and is not optimised for mobile.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/Budgety'}}), Object.create(Source,{text:{value:'Project Link'}, link:{value:'JsProjects/BudgetyApp/index.html'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/Budgety'}}), Object.create(Source,{text:{value:'Project Link'}, link:{value:'JsProjects/BudgetyApp/index.html'}})]},
         tags:{value:['JavaScript']}
     })
 
     var libraryManager = Object.create(Project,{
         title:{value:'Library Manager'},
-        description:{value:'Library Manager for schools. Manages books and students. Uses MySQL as database'},
+        description:{value:'Library Manager for schools. Manages books and students. Uses MySQL as database.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/LibraryManager'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/LibraryManager'}})]},
         tags:{value:['C#','MySQL']}
     })
 
@@ -87,7 +172,7 @@ var MyProjects = (function(){
         title:{value:'TicTacToe'},
         description:{value:'Good Old TicTacToe digitized.<br> Is console based.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/TicTacToe'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/TicTacToe'}})]},
         tags:{value:['Python']}
     })
 
@@ -95,7 +180,7 @@ var MyProjects = (function(){
         title:{value:'BlackJack'},
         description:{value:'The gambling game.<br> Is console based.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/BlackJack'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/BlackJack'}})]},
         tags:{value:['Python']}
     })
 
@@ -103,31 +188,31 @@ var MyProjects = (function(){
         title:{value:'File Encryptor'},
         description:{value:'File Encryptor can encrypt/decrypt files and folers using AES encryption'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/CryptoFileEncryptor'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/CryptoFileEncryptor'}})]},
         tags:{value:['C#']}
     })
 
     var weatherAnalyser = Object.create(Project,{
         title:{value:'Weather Analyser'},
-        description:{value:'11th Grade Science project. Helps in finding and reporting harsh weather conditions'},
+        description:{value:'11th Grade Science project. Helps in reporting harsh weather conditions. Collaborated with <a href="https://instagram.com/_karthik_krishnan_2">Karthik Krishnan</a>.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/WeatherAnalyser'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/WeatherAnalyser'}})]},
         tags:{value:['C#','Python','C','Hardware']}
     })
 
     var smartHome = Object.create(Project,{
         title:{value:'Smart Home'},
-        description:{value:'10th grade science project. Can control everyting from lights to doors using software'},
+        description:{value:'10th grade science project. Can control everyting from lights to doors using software.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/SmartHome'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/SmartHome'}})]},
         tags:{value:['C#','C','Hardware']}
     })
 
     var passwordEncryptor = Object.create(Project,{
         title:{value:'Password Encrptor'},
-        description:{value:'Encrypts Password are returns the encrypted string which can then be decypted using a key'},
+        description:{value:'Encrypts Password are returns the encrypted string which can then be decypted using a key.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Repo"},link:{value:'https://github.com/ROHANANILKUMAR/PasswordEncryptor'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/PasswordEncryptor'}})]},
         tags:{value:['C#']}
     })
 
@@ -155,6 +240,17 @@ var UIController = (function(){
     var projectBtnLink = []
     var projectBtnNo = 1;
 
+    var createAboutContainer = function(about){
+        var newAbout = AboutTemplate;
+        newAbout = newAbout.replace('%Heading%',about.heading);
+        newAbout = newAbout.replace('%Icon%',about.icon);
+        newAbout = newAbout.replace('%Description%',about.description);
+        newAbout = newAbout.replace('%Side%',about.side);
+
+        doms.aboutPage.insertAdjacentHTML('beforeend',newAbout);
+
+    }
+
     var createProjectContainer = function(project){
         var tagsHTML = '';
         var sourcesHTML = '';
@@ -179,7 +275,7 @@ var UIController = (function(){
         finalHTML = finalHTML.replace('%Description%',project.description);
         finalHTML = finalHTML.replace('%Sources%',sourcesHTML);
         finalHTML = finalHTML.replace('%Tags%',tagsHTML);
-
+        //console.log(finalHTML);
         doms.projectPage.insertAdjacentHTML('beforeend',finalHTML);
 
     }
@@ -193,7 +289,10 @@ var UIController = (function(){
         build : document.getElementById('build'),
         contentSelectorContainer: document.getElementById('content-selector-container'),
         contentSelector : document.querySelectorAll('.content-selector'),
+        contentSelectorText : document.querySelectorAll('.content-selector-text'),
         slideInPanels: document.querySelectorAll('.slide-in-panel'),
+        introHeader: document.querySelector('intro-header'),
+        introDescription:document.querySelector('.intro-description'),
         slideInPanel1 : document.querySelector('#slide-in-panel-1'),
         slideInPanelContainer : document.querySelector('#slide-in-panel-container'),
         projectPage: document.getElementById('slide-in-panel-3'),
@@ -205,7 +304,7 @@ var UIController = (function(){
 
      var bringInPanel = function(panelId){
         var curPanel=document.getElementById('slide-in-panel-'+panelId);
-        console.log(curPanel);
+        //console.log(curPanel);
         //window.scrollBy(0,200);
         doms.slideInPanels.forEach((panel)=>{
             if(panel.id===('slide-in-panel-'+panelId)){
@@ -246,7 +345,7 @@ var UIController = (function(){
             if(width<998){
                 doms.mainText.classList.add('main-text-narrow-window');
                 doms.sideMainText.classList.add('side-main-text-mobile');
-                console.log('small window');
+                //console.log('small window');
             }
             else{
                 doms.sideMainText.classList.remove('side-main-text-mobile');
@@ -259,13 +358,7 @@ var UIController = (function(){
                 doms.contentSelectorContainer.classList.remove('content-selector-container-narrow-window');
 
             }
-        },
-
-        pageViewUpdate : function(){
-            var reader = new FileReader()
-            console.log(reader.readAsText('Data/PageViews'))
-        },
-            
+        }, 
         
 
         addUnderline : function(target){
@@ -278,6 +371,7 @@ var UIController = (function(){
                 }
             });
         },
+        createAboutContainer:createAboutContainer,
         bringInPanel:bringInPanel,
         createProjectContainer:createProjectContainer,
         test: function(){
@@ -292,11 +386,22 @@ var controller = (function(UICtrl){
 
     var setupEventListeners = function(){
         document.addEventListener('resize',UICtrl.mainTextSize);
+        UICtrl.doms.sideMainText.addEventListener('click',()=>{
+            UICtrl.doms.sideMainText.style.padding='0 256 0 256';
+            setTimeout(()=>{UICtrl.doms.sideMainText.style.padding='0 24 0 24'},700)
+        });
+
+        UICtrl.doms.contentSelector.forEach((object,index)=>{
+            object.addEventListener('mouseenter',()=>{UICtrl.doms.contentSelectorText[index].classList.add('content-selector-text-hover')});
+            object.addEventListener('mouseleave',()=>{UICtrl.doms.contentSelectorText[index].classList.remove('content-selector-text-hover')});
+        })
+        
+
         UICtrl.doms.contentSelector.forEach((ele)=>{
             ele.addEventListener('click',()=>{
                 UICtrl.addUnderline(ele);
                 UICtrl.bringInPanel(ele.id[ele.id.length-1]);
-                console.log(ele.id[ele.id.length-1],ele.id,ele)
+                //console.log(ele.id[ele.id.length-1],ele.id,ele)
             })
         });
         
@@ -305,7 +410,7 @@ var controller = (function(UICtrl){
     return{
 
         openURL: function(id){
-            console.log('click',id)
+            //console.log('click',id)
             open(UICtrl.projectBtnLink[UICtrl.projectBtnLink.findIndex((obj)=>{return obj.btnNo===id})].link);
         },
 
@@ -318,10 +423,17 @@ var controller = (function(UICtrl){
                 UICtrl.createProjectContainer(project);
             });
 
+            UICtrl.doms.aboutPage.innerHTML = '';
+            MyAbouts.aboutList.forEach((about)=>{
+                UICtrl.createAboutContainer(about);
+            })
+
             var isMobile =  window.mobileCheck();
 
             if(isMobile){
                 UICtrl.doms.headContainer.style.height='50%';
+                UICtrl.doms.introHeader.style.fontSize=40;
+                UICtrl.doms.introDescription.fontSize=35;
                 UICtrl.doms.contentSelector.forEach((obj)=>{
                     obj.style.fontSize=30;
                 })

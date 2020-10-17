@@ -1,4 +1,5 @@
 body{
+    background-color: #1a1a1a;
 
 }
 
@@ -42,7 +43,11 @@ body{
     margin-left: 24px;
     
     border-right: 5px solid #1cd900;
-    transition: padding-right .7s, opacity .7s;
+    transition: padding .7s, opacity .7s, border-width .3s;
+}
+
+#side-main-text:hover{
+    border-width: 15px;
 }
 
 .side-main-text-mobile{
@@ -143,7 +148,7 @@ body{
 .content-selector-text{
     transition: margin-left .3s;
 }
-.content-selector-text:hover{
+.content-selector-text-hover{
 
     font-weight: 600;
     /* letter-spacing: 3px; */
@@ -216,6 +221,11 @@ button:focus{
     border-right: 5px solid #1960ec;
     min-height: 200px;
     padding: 10px;
+    transition: border-right .3s;
+}
+
+.intro-panel:hover{
+    border-right-width: 15px;
 }
 
 .intro-header{
@@ -227,10 +237,10 @@ button:focus{
 }
 
 .intro-description{
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 23px;
     font-family: 'roberto', sans-serif;
-    color: #353535;
+    color: white;
 
 }
 
@@ -248,7 +258,8 @@ button:focus{
 
 
 .slide-in-heading{
-    font-size: 30;
+    display: inline-flex;
+    align-items: center;
     color:#176eff;
     font-family: 'Exo', sans-serif;
     font-weight: solid;
@@ -257,26 +268,37 @@ button:focus{
 
 }
 
+.slide-in-header-text{
+    margin: 0 5px 0 5px;
+    font-size: 30px;
+}
+
 .slide-in-description{
     font-family: 'Exo', sans-serif;
     font-size: 24px;
-    color: rgb(0 0 0);
 }
 
 .slide-in-content-right{
-    border-top-right-radius: 5px;
     background-color:#f7f7f7;
-    border-bottom-right-radius: 5px;
     text-align: right;
     padding: 10px;
     border-right: 10px solid#176eff;
+    transition: border-right .3s;
+}
+
+.slide-in-content-right:hover{
+    border-right-width: 20px;
+
+}
+.slide-in-content-left:hover{
+    border-left-width: 20px;
 }
 
 .slide-in-content-left{
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    color:white;
     padding: 10px;
     border-left: 10px solid#176eff;
+    transition: border-left .3s;
 }
 
 #slide-in-panel-3{
@@ -296,13 +318,19 @@ button:focus{
     background-color: #dedede;
     box-shadow: 6px 6px 27px -10px;
     margin: 20px;
+    transition: width .3s, height .3s;
+}
+
+.slide-in-project-container:hover{
+    width:336px;
+    height: 355px;
 }
 
 .project-image{
     width:100%;
     height:55%;
-    border-top-left-radius:10px;
-    border-top-right-radius: 10px; ;
+    border-top-left-radius:5px;
+    border-top-right-radius: 5px; ;
 }
 .project-content{
     margin: 0 5 0 5;
@@ -343,7 +371,7 @@ button:focus{
 
 }
 .project-source:hover{
-    letter-spacing: 1px;
+    letter-spacing: 3px;
 }
 
 .project-tag-list{
@@ -371,6 +399,11 @@ button:focus{
     color: white;
     padding: 20px;
     border-right: 10px solid #ff4545;
+    transition: border-right .3s;
+}
+
+.slide-in-social-container:hover{
+    border-right-width: 20px;
 }
 
 .social-icon{
