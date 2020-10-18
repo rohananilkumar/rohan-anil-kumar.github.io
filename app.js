@@ -84,7 +84,7 @@ var MyAbouts = (function(){
     var socialLife = Object.create(About,{
         icon:   {value: 'emoji_people'},
         heading: {value: 'Social Life'},
-        description: {value: 'Socially akward. Has small friend circle. Is a typical introvert.'},
+        description: {value: 'Socially akward. Has a small friend circle. Is a typical introvert.'},
         side: {value: getSide()}
     });
 
@@ -409,8 +409,8 @@ var controller = (function(UICtrl){
         rohanImage.height = 400;
 
         slideInProjectContainer.forEach((obj)=>{
-            obj.style.width = 637;
-            obj.style.height = 747;
+            obj.style.width = 685;
+            obj.style.height = 882;
         });
         projectImage.forEach((obj)=>{
             
