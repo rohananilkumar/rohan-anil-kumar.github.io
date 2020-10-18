@@ -432,10 +432,10 @@ var controller = (function(UICtrl){
 
             if(isMobile){
                 UICtrl.doms.headContainer.style.height='40%';
-                UICtrl.doms.introHeader.style.fontSize=40;
-                UICtrl.doms.introDescription.fontSize=35;
+                UICtrl.doms.introHeader.style.fontSize=60;
+                UICtrl.doms.introDescription.fontSize=55;
                 UICtrl.doms.contentSelector.forEach((obj)=>{
-                    obj.style.fontSize=30;
+                    obj.style.fontSize=50;
                 })
             }
 
