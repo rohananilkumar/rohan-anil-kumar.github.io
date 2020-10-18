@@ -437,6 +437,36 @@ var controller = (function(UICtrl){
                 var slideInHeader= document.querySelectorAll('.slide-in-header-text');
                 var slideInDescription= document.querySelectorAll('.slide-in-description');
 
+                var slideInProjectContainer = document.querySelectorAll('.slide-in-project-container');
+                var projectImage = document.querySelectorAll('.project-image');
+                var projectHeading = document.querySelectorAll('.project-heading');
+                var projectDescription = document.querySelectorAll('.project-description');
+                var projectSource = document.querySelectorAll('.project-source');
+                var projectTag = document.querySelectorAll('.project-tag');
+
+                slideInProjectContainer.forEach((obj)=>{
+                    obj.style.width = 637;
+                    obj.style.height = 747;
+                });
+                projectImage.forEach((obj)=>{
+                    
+                });
+                projectHeading.forEach((obj)=>{
+                    obj.style.fontSize = 40;
+                });
+                projectDescription.forEach((obj)=>{
+                    obj.style.fontSize = 37;
+                });
+                projectSource.forEach((obj)=>{
+                    obj.style.fontSize = 35;
+                }); 
+                projectTag.forEach((obj)=>{
+                    obj.style.fontSize = 35;
+                });
+
+
+
+
                 UICtrl.doms.headContainer.style.height='40%';
                 UICtrl.doms.introHeader.style.fontSize=60;
                 UICtrl.doms.introDescription.style.fontSize=50;
