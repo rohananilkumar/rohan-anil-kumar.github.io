@@ -281,6 +281,9 @@ var UIController = (function(){
     }
 
     var doms ={
+        logoImage: document.getElementById('logo-image'),
+        subMainText: document.querySelectorAll('.sub-main-text'),
+        rohanText: document.querySelector('#rohan-text'),
         headContainer: document.getElementById('head-container'),
         mainText : document.querySelector('#main-text'),
         sideMainText : document.querySelector('#side-main-text'),
@@ -431,12 +434,29 @@ var controller = (function(UICtrl){
             var isMobile =  window.mobileCheck();
 
             if(isMobile){
+                var slideInHeader= document.querySelectorAll('.slide-in-header-text');
+                var slideInDescription= document.querySelectorAll('.slide-in-description');
+
                 UICtrl.doms.headContainer.style.height='40%';
                 UICtrl.doms.introHeader.style.fontSize=60;
                 UICtrl.doms.introDescription.style.fontSize=50;
                 UICtrl.doms.contentSelector.forEach((obj)=>{
                     obj.style.fontSize=50;
+                });
+                UICtrl.doms.logoImage.width = "300";
+                UICtrl.doms.logoImage.height = "300";
+
+                UICtrl.doms.rohanText.style.fontSize = 80;
+
+                UICtrl.doms.sideMainText.style.fontSize = 50;
+
+                slideInHeader.forEach((header)=>{
+                    header.style.fontSize = 50;
                 })
+                slideInDescription.forEach((description)=>{
+                    description.style.fontSize = 44;
+                })
+
             }
 
             var dob = 2002;
