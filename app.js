@@ -387,6 +387,70 @@ var UIController = (function(){
 
 var controller = (function(UICtrl){
 
+    var rearrangeForMobile = function(){
+        var slideInHeader= document.querySelectorAll('.slide-in-header-text');
+        var slideInDescription= document.querySelectorAll('.slide-in-description');
+
+        var slideInProjectContainer = document.querySelectorAll('.slide-in-project-container');
+        var projectImage = document.querySelectorAll('.project-image');
+        var projectHeading = document.querySelectorAll('.project-heading');
+        var projectDescription = document.querySelectorAll('.project-description');
+        var projectSource = document.querySelectorAll('.project-source');
+        var projectTag = document.querySelectorAll('.project-tag');
+
+        var socialHeading = document.querySelectorAll('.social-heading');
+        var socialLink = document.querySelectorAll('.social-link');
+        
+        slideInProjectContainer.forEach((obj)=>{
+            obj.style.width = 637;
+            obj.style.height = 747;
+        });
+        projectImage.forEach((obj)=>{
+            
+        });
+        projectHeading.forEach((obj)=>{
+            obj.style.fontSize = 40;
+        });
+        projectDescription.forEach((obj)=>{
+            obj.style.fontSize = 37;
+        });
+        projectSource.forEach((obj)=>{
+            obj.style.fontSize = 35;
+        }); 
+        projectTag.forEach((obj)=>{
+            obj.style.fontSize = 35;
+        });
+
+        socialHeading.forEach((obj)=>{
+            obj.style.fontSize = 55;
+        });
+        socialLink.forEach((obj)=>{
+            obj.style.fontSize = 45;
+        });
+
+
+        UICtrl.doms.headContainer.style.height='40%';
+        UICtrl.doms.introHeader.style.fontSize=60;
+        UICtrl.doms.introDescription.style.fontSize=50;
+        UICtrl.doms.contentSelector.forEach((obj)=>{
+            obj.style.fontSize=50;
+        });
+        UICtrl.doms.logoImage.width = "300";
+        UICtrl.doms.logoImage.height = "300";
+
+        UICtrl.doms.rohanText.style.fontSize = 80;
+
+        UICtrl.doms.sideMainText.style.fontSize = 50;
+
+        slideInHeader.forEach((header)=>{
+            header.style.fontSize = 50;
+        })
+        slideInDescription.forEach((description)=>{
+            description.style.fontSize = 44;
+        })
+
+    }
+
     var setupEventListeners = function(){
         document.addEventListener('resize',UICtrl.mainTextSize);
         UICtrl.doms.sideMainText.addEventListener('click',()=>{
@@ -434,59 +498,7 @@ var controller = (function(UICtrl){
             var isMobile =  window.mobileCheck();
 
             if(isMobile){
-                var slideInHeader= document.querySelectorAll('.slide-in-header-text');
-                var slideInDescription= document.querySelectorAll('.slide-in-description');
-
-                var slideInProjectContainer = document.querySelectorAll('.slide-in-project-container');
-                var projectImage = document.querySelectorAll('.project-image');
-                var projectHeading = document.querySelectorAll('.project-heading');
-                var projectDescription = document.querySelectorAll('.project-description');
-                var projectSource = document.querySelectorAll('.project-source');
-                var projectTag = document.querySelectorAll('.project-tag');
-
-                slideInProjectContainer.forEach((obj)=>{
-                    obj.style.width = 637;
-                    obj.style.height = 747;
-                });
-                projectImage.forEach((obj)=>{
-                    
-                });
-                projectHeading.forEach((obj)=>{
-                    obj.style.fontSize = 40;
-                });
-                projectDescription.forEach((obj)=>{
-                    obj.style.fontSize = 37;
-                });
-                projectSource.forEach((obj)=>{
-                    obj.style.fontSize = 35;
-                }); 
-                projectTag.forEach((obj)=>{
-                    obj.style.fontSize = 35;
-                });
-
-
-
-
-                UICtrl.doms.headContainer.style.height='40%';
-                UICtrl.doms.introHeader.style.fontSize=60;
-                UICtrl.doms.introDescription.style.fontSize=50;
-                UICtrl.doms.contentSelector.forEach((obj)=>{
-                    obj.style.fontSize=50;
-                });
-                UICtrl.doms.logoImage.width = "300";
-                UICtrl.doms.logoImage.height = "300";
-
-                UICtrl.doms.rohanText.style.fontSize = 80;
-
-                UICtrl.doms.sideMainText.style.fontSize = 50;
-
-                slideInHeader.forEach((header)=>{
-                    header.style.fontSize = 50;
-                })
-                slideInDescription.forEach((description)=>{
-                    description.style.fontSize = 44;
-                })
-
+                rearrangeForMobile();
             }
 
             var dob = 2002;
