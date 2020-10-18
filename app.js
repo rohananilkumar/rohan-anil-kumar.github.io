@@ -409,8 +409,8 @@ var controller = (function(UICtrl){
         rohanImage.height = 400;
 
         slideInProjectContainer.forEach((obj)=>{
-            obj.style.width = 637;
-            obj.style.height = 747;
+            obj.style.width = 685;
+            obj.style.height = 882;
         });
         projectImage.forEach((obj)=>{
             
