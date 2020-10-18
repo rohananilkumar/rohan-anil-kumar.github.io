@@ -1,6 +1,7 @@
 body{
     background-color: #1a1a1a;
 
+
 }
 
 *{
@@ -188,10 +189,7 @@ button:focus{
     display: inline-flex;
     justify;-content:center;
     */
-    background-color: #f0f0f0;
     width:100%;
-
-    
     transition: opacity .3s, margin-right .3s;
 
     /*transition: justify-content .3s;*/
@@ -201,7 +199,6 @@ button:focus{
 .slide-in-panel{
     margin-top: 10px;
     margin-right: 7.5%;
-    position: absolute;
     width:85%;
     padding:10px;
 
@@ -218,7 +215,7 @@ button:focus{
 }
 
 .intro-panel{
-    border-right: 5px solid #1960ec;
+    border-right: 5px solid #1cd900;
     min-height: 200px;
     padding: 10px;
     transition: border-right .3s;
@@ -232,7 +229,7 @@ button:focus{
     font-size: 30px;
     font-family: 'Exo';
     font-weight: bold;
-    color: #0557ec;
+    color: #1cd900;
 
 }
 
@@ -442,8 +439,21 @@ a:hover{
 }
 
 #bottom-container{
-
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height:100px;
+    background-color: #0e0d0d;
+    color: white;
+    font-family: 'Roberto', sans-serif;
+    width: 100%;
+    position: relative;
+    margin-top: 10px;
+    bottom:0;
+    clear:both;
 }
+
+
 
 
 

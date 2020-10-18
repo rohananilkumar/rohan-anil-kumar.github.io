@@ -91,7 +91,7 @@ var MyAbouts = (function(){
     var goals = Object.create(About,{
         icon:   {value: 'track_changes'},
         heading: {value: 'Goals'},
-        description: {value: 'Rohan always thought that getting a good job was his main goal.<br>Lately he\'s getting into to the idea that being happy in life is his main goal.<br>Apart from that he\'s trying to master the art of computer science but is still trying to figure out which part of computer science he\'d like to specialize in.'},
+        description: {value: 'Rohan always thought that landing a good job was his main goal.<br>Lately he\'s getting to know that being happy in life is his main goal.<br>Apart from that he\'s trying to master the art of computer science but is still trying to figure out which part of computer science he\'d like to specialize in.'},
         side: {value: getSide()}
     });
 
@@ -401,6 +401,13 @@ var controller = (function(UICtrl){
         var socialHeading = document.querySelectorAll('.social-heading');
         var socialLink = document.querySelectorAll('.social-link');
         
+        var rohanImage = document.getElementById('rohan-image-container');
+
+        var bottomText = document.getElementById('bottom-text');
+
+        rohanImage.width = 400;
+        rohanImage.height = 400;
+
         slideInProjectContainer.forEach((obj)=>{
             obj.style.width = 637;
             obj.style.height = 747;
@@ -448,6 +455,8 @@ var controller = (function(UICtrl){
         slideInDescription.forEach((description)=>{
             description.style.fontSize = 44;
         })
+
+        bottomText.style.fontSize = 20;
 
     }
 
