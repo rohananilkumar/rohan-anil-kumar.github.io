@@ -272,7 +272,14 @@ var UIController = (function(){
             var newSourceTemplate = projectSourceTemplate;
             newSourceTemplate = newSourceTemplate.replace('%Text%',source.text);
             newSourceTemplate = newSourceTemplate.replace('%Id%',projectBtnNo);
-            newSourceTemplate = newSourceTemplate.replace('%Click%','controller.openURL('+projectBtnNo+')');
+            if(mobileCheck() && source.text !== 'Source' ){
+                newSourceTemplate = newSourceTemplate.replace('%Click%',`()=>{alert('Not Supported on mobile browsers')}`);
+                
+            }
+            else{
+                newSourceTemplate = newSourceTemplate.replace('%Click%',`controller.openURL(${projectBtnNo})`);
+                console.log('Not Mobile');
+            }
             projectBtnLink.push({btnNo: projectBtnNo, link: source.link});
             projectBtnNo++;
             sourcesHTML+= newSourceTemplate;
