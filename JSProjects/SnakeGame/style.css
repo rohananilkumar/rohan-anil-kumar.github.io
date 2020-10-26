@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+}
+
+html{
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    
+}
+#field{
+    background-color: #212121;
+    border-width: 1px;
+    border-radius: 5px;;
+}
+
+#main-container{
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 90%;
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+#details-container{
+    height:500px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#game-heading{
+    font-size: 40px;
+    color: #484848;
+    font-family: 'Lato', sans-serif;
+}
+#creator-name{
+    font-size: 25px;
+    color:#8a8a8a;
+    font-family: 'Lato', sans-serif;
+}
+
+#keys-container{
+    margin: 30px 0 30px 0;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#keys-0{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    float:left;
+}
+#keys-1{
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+#keys-2{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    float:left;
+}
+
+#btn-container{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+.btn{
+    border-style: none;
+    transition: font-weight .3s,opacity .3s, letter-spacing .3s;
+    background-color: #212121;
+    color: white;
+    font-size: 26px;
+}
+
+.btn:hover{
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.btn:focus{
+    border-style: none;
+    outline: none;
+}
+
+.key-disabled{
+    color:#b0b0b0;
+}
+
+#game-over{
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    background-color: #212121;
+    color:white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 30px 0 30px 0px;
+}
+
+#score-container{
+    margin-bottom: 30px;
+    display: inline-flex;
+    width: 50%;
+
+}
+
+#score-header{
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    float:left
+
+}
+
+#score{
+    float:left;
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    background-color: #212121;
+    color:white;
+    border-radius: 5px;
+    margin-left:5px;
+    padding:3px;
+    align-items: center;
+
+}

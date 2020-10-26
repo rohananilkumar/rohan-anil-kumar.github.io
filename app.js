@@ -140,7 +140,7 @@ var MyProjects = (function(){
         title:{value:'The Media Stream'},
         description:{value:'A server client software which can save and retrieve files from the server.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/TheMediaStream'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/TheMediaStream'}})]},
         tags:{value:['Python']}
     })
 
@@ -148,7 +148,15 @@ var MyProjects = (function(){
         title:{value:'Memory Game'},
         description:{value:'The good old memory game where one has to eliminate all cards by choosing two idendical cards at the same time.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/MemoryGame'}}), Object.create(Source,{text:{value:'Game'}, link:{value:'JSProjects/MemoryGame/index.html'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/MemoryGame'}}), Object.create(Source,{text:{value:'Game'}, link:{value:'JSProjects/MemoryGame/index.html'}})]},
+        tags:{value:['JavaScript']}
+    })
+
+    var snakeGame = Object.create(Project,{
+        title:{value:'Snake Game'},
+        description:{value:'Snake game that used to be pre-installed in old nokia phones got a new look.'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/SnakeGame'}}), Object.create(Source,{text:{value:'Game'}, link:{value:'JSProjects/SnakeGame/index.html'}})]},
         tags:{value:['JavaScript']}
     })
 
@@ -156,7 +164,7 @@ var MyProjects = (function(){
         title:{value:'Budgety'},
         description:{value:'Budget Calculator and organiser. Note that the UI is not designed by Rohan and is not optimised for mobile.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/Budgety'}}), Object.create(Source,{text:{value:'Project Link'}, link:{value:'JSProjects/BudgetyApp/index.html'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/Budgety'}}), Object.create(Source,{text:{value:'Project Link'}, link:{value:'JSProjects/BudgetyApp/index.html'}})]},
         tags:{value:['JavaScript']}
     })
 
@@ -164,7 +172,7 @@ var MyProjects = (function(){
         title:{value:'Library Manager'},
         description:{value:'Library Manager for schools. Manages books and students. Uses MySQL as database.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/LibraryManager'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/LibraryManager'}})]},
         tags:{value:['C#','MySQL']}
     })
 
@@ -172,7 +180,7 @@ var MyProjects = (function(){
         title:{value:'TicTacToe'},
         description:{value:'Good Old TicTacToe digitized.<br> Is console based.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/TicTacToe'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/TicTacToe'}})]},
         tags:{value:['Python']}
     })
 
@@ -180,7 +188,7 @@ var MyProjects = (function(){
         title:{value:'BlackJack'},
         description:{value:'The gambling game.<br> Is console based.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/BlackJack'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/BlackJack'}})]},
         tags:{value:['Python']}
     })
 
@@ -188,7 +196,7 @@ var MyProjects = (function(){
         title:{value:'File Encryptor'},
         description:{value:'File Encryptor can encrypt/decrypt files and folers using AES encryption'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/CryptoFileEncryptor'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/CryptoFileEncryptor'}})]},
         tags:{value:['C#']}
     })
 
@@ -196,7 +204,7 @@ var MyProjects = (function(){
         title:{value:'Weather Analyser'},
         description:{value:'11th Grade Science project. Helps in reporting harsh weather conditions. Collaborated with <a href="https://instagram.com/_karthik_krishnan_2">Karthik Krishnan</a>.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/WeatherAnalyser'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/WeatherAnalyser'}})]},
         tags:{value:['C#','Python','C','Hardware']}
     })
 
@@ -204,7 +212,7 @@ var MyProjects = (function(){
         title:{value:'Smart Home'},
         description:{value:'10th grade science project. Can control everyting from lights to doors using software.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/SmartHome'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/SmartHome'}})]},
         tags:{value:['C#','C','Hardware']}
     })
 
@@ -212,13 +220,14 @@ var MyProjects = (function(){
         title:{value:'Password Encrptor'},
         description:{value:'Encrypts Password are returns the encrypted string which can then be decypted using a key.'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/ROHANANILKUMAR/PasswordEncryptor'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/PasswordEncryptor'}})]},
         tags:{value:['C#']}
     })
 
     var projectList=[
         libraryManager,
         mediaStream,
+        snakeGame,
         memoryGame,
         crypto,
         budgety,

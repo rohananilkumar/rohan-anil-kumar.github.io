@@ -1,0 +1,63 @@
+<!Doctype HTML>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp' rel='stylesheet'>
+    <title>SNAKE</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div id = 'main-container'>
+        <div id='details-container'>
+            <div id='game-heading'>
+                SNAKE
+            </div>
+            <div id='creator-name'>
+                By ROHAN ANIL KUMAR
+            </div>
+            <div id='keys-container'>
+                <div id='keys-0'>
+                    <i class="material-icons" id='arrow-up' style='font-size: 54px'>keyboard_arrow_up</i>
+                </div>
+                <div id='keys-1'>
+                    <i class="material-icons" id='arrow-left' style='font-size: 54px'>keyboard_arrow_left</i>
+                    <i class="material-icons" id='arrow-right' style='font-size: 54px'>keyboard_arrow_right</i>
+                </div>
+                <div id='keys-2'>
+                    <i class="material-icons" id='arrow-down' style='font-size: 54px'>keyboard_arrow_down</i>
+                </div>
+
+            </div>
+            <div id = 'score-container'>
+                <div id='score-header'>
+                    Score: 
+                </div>
+                <div id='score'>
+                    0
+                </div>
+            </div>
+            <div id='btn-container'>
+                <button id='start-btn' class='btn'>
+                    START
+                </button>
+                <button id='stop-btn' class='btn'>
+                    STOP
+                </button>
+            </div>
+
+            <div id='game-over'>
+                Game Over
+            </div>
+        </div>
+        
+        <canvas id='field' width='500' height='500'>
+
+        </canvas>
+    </div>
+
+</body>
+
+
+<script src='script.js'></script>
+
+</html>
