@@ -245,6 +245,10 @@ var MyProjects = (function(){
 
 })()
 
+var showMobileError = function(){
+    alert('Not supported on mobile browsers');
+}
+
 var UIController = (function(){
     var projectBtnLink = []
     var projectBtnNo = 1;
@@ -268,12 +272,14 @@ var UIController = (function(){
             tagsHTML+=projectTagTemplate.replace('%Tag%',tag);
         });
 
+
+
         project.sources.forEach((source)=>{
             var newSourceTemplate = projectSourceTemplate;
             newSourceTemplate = newSourceTemplate.replace('%Text%',source.text);
             newSourceTemplate = newSourceTemplate.replace('%Id%',projectBtnNo);
             if(mobileCheck() && source.text !== 'Source' ){
-                newSourceTemplate = newSourceTemplate.replace('%Click%',`alert('Not Supported on mobile browsers')`);
+                newSourceTemplate = newSourceTemplate.replace('%Click%',`showMobileError()`);
                 
             }
             else{
