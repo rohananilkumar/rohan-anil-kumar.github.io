@@ -87,6 +87,7 @@ const Snake = (function(){
                 return null;
             }
         },
+
         getPreviousBlock(thisBlock){
             //Gets the Previous block
             return this.bodyBlocks.find((block)=> block.id === thisBlock.id-1);
@@ -344,6 +345,7 @@ const Controller = (function(snake){
         }
     }
 
+
     function setHeading(event){
         //Sets new head heading for snake if arrow keys are pressed and game is ready to listen to events
 
@@ -405,6 +407,24 @@ const Controller = (function(snake){
         //Start button event listener
         startBtn.addEventListener('click',()=>{
             startBtnClick();
+        });
+
+        //keys container event listener
+        keyContainer.addEventListener('click',(event)=>{
+            switch(event.target.id){
+                case('arrow-up'):
+                setHeading({key:'ArrowUp'});
+                break;
+                case('arrow-left'):
+                setHeading({key:'ArrowLeft'});
+                break;
+                case('arrow-right'):
+                setHeading({key:'ArrowRight'});
+                break;
+                case('arrow-down'):
+                setHeading({key:'ArrowDown'});
+                break;
+            };
         })
 
     }
