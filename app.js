@@ -273,6 +273,7 @@ var UIController = (function(){
             newSourceTemplate = newSourceTemplate.replace('%Text%',source.text);
             newSourceTemplate = newSourceTemplate.replace('%Id%',projectBtnNo);
             if(mobileCheck() && source.text !== 'Source' ){
+                alert('MobileBrowser');
                 newSourceTemplate = newSourceTemplate.replace('%Click%',`()=>{alert('Not Supported on mobile browsers')}`);
                 
             }
