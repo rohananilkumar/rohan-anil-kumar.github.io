@@ -136,6 +136,14 @@ var MyProjects = (function(){
         link: null
     }
 
+    var jsonParser = Object.create(Project,{
+        title:{value:'Custom JSON Parser'},
+        description:{value:'A C# class library for parsing complex json objects.'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohan-anil-kumar/JsonParser'}})]},
+        tags:{value:['C#','Class Library']}
+    })
+
     var mediaStream = Object.create(Project,{
         title:{value:'The Media Stream'},
         description:{value:'A server client software which can save and retrieve files from the server.'},
