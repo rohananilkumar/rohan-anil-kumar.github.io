@@ -232,6 +232,15 @@ var MyProjects = (function(){
         tags:{value:['C#']}
     })
 
+    var site = Object.create(Project,{
+        title:{value:'Portfolio Website'},
+        description:{value:'This site.'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/rohan-anil-kumar.github.io'}})]},
+        tags:{value:['JS']}
+    })
+
+
     var projectList=[
         jsonParser,
         libraryManager,
@@ -244,7 +253,8 @@ var MyProjects = (function(){
         ticTacToe,
         blackJack,
         weatherAnalyser,
-        smartHome
+        smartHome,
+        site
     ]
     console.log(projectList)
     
