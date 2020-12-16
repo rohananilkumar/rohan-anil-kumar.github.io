@@ -265,6 +265,7 @@ var MyProjects = (function(){
         budgety,
         passwordEncryptor,
         fragDef,
+        infixPostfix,
         ticTacToe,
         blackJack,
         weatherAnalyser,
