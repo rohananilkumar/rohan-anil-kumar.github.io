@@ -225,7 +225,7 @@ var MyProjects = (function(){
     })
 
     var passwordEncryptor = Object.create(Project,{
-        title:{value:'Password Encrptor'},
+        title:{value:'Password Encryptor'},
         description:{value:'Encrypts Password are returns the encrypted string which can then be decypted using a key.'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/PasswordEncryptor'}})]},
@@ -239,6 +239,20 @@ var MyProjects = (function(){
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/rohan-anil-kumar.github.io'}})]},
         tags:{value:['JS']}
     })
+    var infixPostfix = Object.create(Project,{
+        title:{value:'Infix Postfix Evaluator'},
+        description:{value:'Program to convert infix expressions to postfix and hence evaluate the postfix expression'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/InfixPostfix'}})]},
+        tags:{value:['JS']}
+    })
+    var fragDef = Object.create(Project,{
+        title:{value:'FragDef'},
+        description:{value:'Program to fragment and defragment files.'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/FragDef'}})]},
+        tags:{value:['JS']}
+    })
 
 
     var projectList=[
@@ -250,6 +264,7 @@ var MyProjects = (function(){
         crypto,
         budgety,
         passwordEncryptor,
+        fragDef,
         ticTacToe,
         blackJack,
         weatherAnalyser,
