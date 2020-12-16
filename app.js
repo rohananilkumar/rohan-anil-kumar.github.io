@@ -244,14 +244,14 @@ var MyProjects = (function(){
         description:{value:'Program to convert infix expressions to postfix and hence evaluate the postfix expression'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/InfixPostfix'}})]},
-        tags:{value:['JS']}
+        tags:{value:['Python']}
     })
     var fragDef = Object.create(Project,{
         title:{value:'FragDef'},
         description:{value:'Program to fragment and defragment files.'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/FragDef'}})]},
-        tags:{value:['JS']}
+        tags:{value:['Python']}
     })
 
 
