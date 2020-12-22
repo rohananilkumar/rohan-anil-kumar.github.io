@@ -77,7 +77,7 @@ var MyAbouts = (function(){
     var education = Object.create(About,{
         icon:   {value: 'school'},
         heading: {value: 'Education'},
-        description: {value: 'Rohan is a Class 12th(Science) graduate from Kendriya Vidyalaya Ezhimala.<br>He learnt programming from Udemy, Codecademy, Youtube and from his school.'},
+        description: {value: 'Rohan is a CSE student in TKMCE, Kollam.<br>He learnt programming from Udemy, Codecademy, Youtube and from his school.'},
         side: {value: getSide()}
     });
 
