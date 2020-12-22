@@ -98,7 +98,7 @@ var MyAbouts = (function(){
     var skills = Object.create(About,{
         icon:   {value: 'work'},
         heading: {value: 'Skills'},
-        description: {value: 'Fluent in C#, Python and JavaScript. Know C upto the extend of programming an arduino. <br> Skilled in socket programming(client server).<br>Experienced in making projects with arduino.'},
+        description: {value: 'Fluent in C#, Python and JavaScript. Worked with ASP.NET, NodeJs and Xamarin. Know C upto the extend of programming an arduino. <br> Skilled in socket programming(client server).<br>Experienced in making projects with arduino and raspberry pi.'},
         side: {value: getSide()}
     });
 
@@ -254,11 +254,20 @@ var MyProjects = (function(){
         tags:{value:['Python']}
     })
 
+    var Vidly = Object.create(Project,{
+        title:{value:'Vidly'},
+        description:{value:'Asp.NET web application for video rental services. Note that this is a practice project and is not meant for deployment'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/vidly'}})]},
+        tags:{value:['C#','ASP.NET', 'Entity Framework', 'JQuery']}
+    })
+
 
     var projectList=[
         jsonParser,
         libraryManager,
         mediaStream,
+        Vidly,
         snakeGame,
         memoryGame,
         crypto,
