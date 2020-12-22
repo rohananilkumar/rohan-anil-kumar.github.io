@@ -256,10 +256,10 @@ var MyProjects = (function(){
 
     var Vidly = Object.create(Project,{
         title:{value:'Vidly'},
-        description:{value:'Asp.NET web application for video rental services. Note that this is a practice project and is not meant for deployment'},
+        description:{value:'Asp.NET web application for video rental services. Note that this is a practice project.'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/vidly'}})]},
-        tags:{value:['C#','ASP.NET', 'Entity Framework', 'JQuery']}
+        tags:{value:['ASP.NET', 'JQuery']}
     })
 
 
