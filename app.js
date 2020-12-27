@@ -254,7 +254,7 @@ var MyProjects = (function(){
         tags:{value:['Python']}
     })
 
-    var Vidly = Object.create(Project,{
+    var vidly = Object.create(Project,{
         title:{value:'Vidly'},
         description:{value:'Asp.NET web application for video rental services. Note that this is a practice project.'},
         image:{value: 'Images/project-placeholder.jpg'},
@@ -262,12 +262,21 @@ var MyProjects = (function(){
         tags:{value:['ASP.NET', 'JQuery']}
     })
 
+    var contactBook = Object.create(Project,{
+        title:{value:'Contact Book'},
+        description:{value:'Simple Contact Book application that performs all CRUD operations on contacts.'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/ContactBook'}})]},
+        tags:{value:['Xamarin', 'Android', 'SQLite']}
+    })
+
 
     var projectList=[
         jsonParser,
         libraryManager,
         mediaStream,
-        Vidly,
+        vidly,
+        contactBook,
         snakeGame,
         memoryGame,
         crypto,
