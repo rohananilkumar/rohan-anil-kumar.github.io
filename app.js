@@ -237,7 +237,7 @@ var MyProjects = (function(){
         description:{value:'This site.'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/rohan-anil-kumar.github.io'}})]},
-        tags:{value:['JS']}
+        tags:{value:['JavaScript']}
     })
     var infixPostfix = Object.create(Project,{
         title:{value:'Infix Postfix Evaluator'},
@@ -267,7 +267,7 @@ var MyProjects = (function(){
         description:{value:'Simple Contact Book application that performs all CRUD operations on contacts.'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/ContactBook'}})]},
-        tags:{value:['Xamarin', 'Android', 'SQLite']}
+        tags:{value:['C#','Xamarin', 'Android', 'SQLite']}
     })
 
 
