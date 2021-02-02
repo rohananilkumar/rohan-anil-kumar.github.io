@@ -270,10 +270,19 @@ var MyProjects = (function(){
         tags:{value:['C#','Xamarin', 'Android', 'SQLite']}
     })
 
+    var flashChat = Object.create(Project,{
+        title:{value:'Flash Chat'},
+        description:{value:'Chat room application using flutter, powered by firebase auth and cloud firestore'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/flash-chat'}})]},
+        tags:{value:['Flutter','Dart', 'Firebase']}
+    })
+
 
     var projectList=[
         jsonParser,
         libraryManager,
+        flashChat,
         mediaStream,
         vidly,
         contactBook,
