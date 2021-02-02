@@ -278,14 +278,31 @@ var MyProjects = (function(){
         tags:{value:['Flutter','Dart', 'Firebase']}
     })
 
+    var clima = Object.create(Project,{
+        title:{value:'Clima'},
+        description:{value:'Android app that helps you get the weather forecast of your location'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/climat'}})]},
+        tags:{value:['Flutter','Dart']}
+    })
+    var bmiCalc = Object.create(Project,{
+        title:{value:'Bmi Calculator'},
+        description:{value:'Android app to calculate BMI that implements an elegant UI'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/bmi-calculator'}})]},
+        tags:{value:['Flutter','Dart']}
+    })
+
 
     var projectList=[
         jsonParser,
         libraryManager,
         flashChat,
         mediaStream,
+        clima,
         vidly,
         contactBook,
+        bmiCalc,
         snakeGame,
         memoryGame,
         crypto,
