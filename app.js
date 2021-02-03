@@ -282,7 +282,7 @@ var MyProjects = (function(){
         title:{value:'Clima'},
         description:{value:'Android app that helps you get the weather forecast of your location'},
         image:{value: 'Images/project-placeholder.jpg'},
-        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/climat'}})]},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/clima'}})]},
         tags:{value:['Flutter','Dart']}
     })
     var bmiCalc = Object.create(Project,{
