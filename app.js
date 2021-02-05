@@ -226,7 +226,7 @@ var MyProjects = (function(){
 
     var passwordEncryptor = Object.create(Project,{
         title:{value:'Password Encryptor'},
-        description:{value:'Encrypts Password are returns the encrypted string which can then be decypted using a key.'},
+        description:{value:'Encrypts Password and returns the encrypted string which can then be decypted using a key.'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/PasswordEncryptor'}})]},
         tags:{value:['C#']}
