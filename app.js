@@ -293,6 +293,14 @@ var MyProjects = (function(){
         tags:{value:['Flutter','Dart']}
     })
 
+    var vidlyNodejs = Object.create(Project,{
+        title:{value:'Vidly NodeJS'},
+        description:{value:'NodeJS endpoint for vidly, a video rental service'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/vidly-nodejs'}})]},
+        tags:{value:['NodeJS', 'Express', 'MongoDB']}
+    })
+
 
     var projectList=[
         jsonParser,
@@ -301,6 +309,7 @@ var MyProjects = (function(){
         mediaStream,
         clima,
         vidly,
+        vidlyNodejs,
         contactBook,
         bmiCalc,
         snakeGame,
