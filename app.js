@@ -98,7 +98,7 @@ var MyAbouts = (function(){
     var skills = Object.create(About,{
         icon:   {value: 'work'},
         heading: {value: 'Skills'},
-        description: {value: 'Fluent in C#, Python and JavaScript. Worked with ASP.NET, NodeJs and Xamarin. Know C upto the extend of programming an arduino. <br> Skilled in socket programming(client server).<br>Experienced in making projects with arduino and raspberry pi.'},
+        description: {value: 'Fluent in C#, Python, JavaScript and Dart. Worked with ASP.NET, NodeJs, Xamarin and Flutter. Know C upto the extend of programming an arduino. <br> Skilled in socket programming(client server).<br>Experienced in making projects with arduino and raspberry pi.'},
         side: {value: getSide()}
     });
 
