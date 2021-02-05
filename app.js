@@ -286,7 +286,7 @@ var MyProjects = (function(){
         tags:{value:['Flutter','Dart']}
     })
     var bmiCalc = Object.create(Project,{
-        title:{value:'Bmi Calculator'},
+        title:{value:'BMI Calculator'},
         description:{value:'Android app to calculate BMI that implements an elegant UI'},
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/bmi-calculator'}})]},
