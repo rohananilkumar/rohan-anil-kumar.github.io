@@ -1,0 +1,246 @@
+$primary: #420084;
+$secondary:#3B0077;
+$tag-color:#9343E4;
+$panel-shadow:1px 0px 5px 0px black;
+$section-header-size:2em;
+$illustration-background:rgba(110, 0, 220, .16);
+
+body{
+    margin: 0;
+    padding:0;   
+}
+ul{
+    margin: 0;
+    padding:0;
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+
+.nav-bar{
+    background-color: $secondary;
+    
+    color:white;
+    padding: .5em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1{
+        font-family: Myanmar Text;
+        font-size: .9em;
+        font-weight: bold;
+        margin:0;
+        vertical-align: center;
+        text-align: center;
+        line-height: 10px;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+}
+.nav-links{
+    width: 40%;
+}
+.hebrew{
+    height: 100%;
+    .large-container{
+        background-color: $primary;
+        height: 80vh;
+        padding:.5em;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        box-shadow:  $panel-shadow;
+    
+        .large-container-text{
+            .main-header{
+                color:white;
+                font-family: Myanmar Text;
+                font-size: 4em;
+                line-height: 65px;
+                width:4em;
+            }
+        
+            .sub-header{
+                color:white;
+                font-family: Myanmar Text;
+                font-size: 1.5em;
+            }
+        }
+    
+        
+    }
+}
+
+.featured-project{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 0em;
+
+    .section-tag{
+        color:$tag-color;
+        font-family: Myanmar Text;
+        font-weight: bold;
+        font-size: 1.5em;;
+    }
+
+    header{
+        font-family: Myanmar Text;
+        font-weight: bold;
+        font-size: $section-header-size;
+    }
+
+    svg{
+        width: 90%;
+        height: auto;
+        margin-bottom: 3em;
+    }
+
+    .section-data{
+        margin: 0 1em;
+        font-family: Myanmar Text;
+        line-height: 1.3em;
+        font-weight: 400;
+    }
+}
+
+.background-container{
+    background-color: $primary;
+    box-shadow:  $panel-shadow;
+
+    header{
+        color:white;
+        font-family:Myanmar Text;
+        font-size:$section-header-size;
+        font-weight: bold;
+        margin-left:.5em;
+        padding-top:.5em;
+    }
+
+    .projects-panel{
+        margin: 0 1em;
+        display: flex; 
+        justify-content: center;
+        
+          
+    }
+
+    .project-panel{
+        background-color:white;
+        width:50%;
+        height:15em;
+        border-radius: 30px 30px 0 0;
+        
+    }
+
+    .pin-panel-container{
+        padding: 3em 0;
+
+        .pin-panel{
+            margin-left:1em;
+            margin-top:1em;
+            background-color: white;
+            border-radius: 30px;
+            padding:.5em;
+            width: 80%;
+            display: flex;
+            .pin-panel-circle{
+                
+                border-radius: 50%;
+                width:30px;
+                height: 30px;
+                background-color: $primary;
+            }
+            .pin-panel-text{
+                display: inline;
+                margin-left: 2.5em;
+                font-family: Myanmar Text;
+                font-weight: bold;
+                padding:auto;
+    
+            }
+        }
+    }
+
+}
+
+.skill-set{
+    margin: 3em 1em;
+
+
+    .skill-panel{
+        box-shadow: 0px 1px 3px black;
+        border-radius: 30px;
+        
+        
+
+        .written{
+            padding:1em;
+            display: grid;
+            grid-template: 'tag' 'header' 'description';
+
+            display: flex;
+            flex-direction: column;
+
+            .skill-tag{
+                grid-area: tag;
+                color:$tag-color;
+                font-family: Myanmar Text;
+                font-weight:bold;
+                font-size: 1.5em;
+            }
+            header{
+                grid-area: header;
+                font-size: 2em;
+                font-family: Myanmar Text;
+                font-weight: bold;
+    
+            }
+            
+            .skill-description{
+                grid-area:description;
+                
+                font-family: Myanmar Text;
+                line-height: 1.3em;
+                font-weight: 400;
+    
+            }
+        }
+
+        .illustration{
+            min-height: 16em;
+            background-color: $illustration-background;
+            border-radius: 0 0 30px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+
+                width:90%;
+                height:auto;
+                margin:1em;
+            }
+        }
+
+    }
+}
+
+.leadership{
+    background-color: $primary;
+}
+
+
+@media(min-width:480px){
+    .nav-bar{
+        h1{
+            font-size: 1.2em;
+        }
+        
+    }
+    
+}
