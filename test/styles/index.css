@@ -16,7 +16,7 @@ a {
 .nav-bar {
   background-color: #3B0077;
   color: white;
-  padding: .5em 1em;
+  padding: 1em 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +30,7 @@ a {
 
 .nav-bar h1 {
   font-family: Myanmar Text;
-  font-size: .9em;
+  font-size: 3em;
   font-weight: bold;
   margin: 0;
   vertical-align: center;
@@ -47,8 +47,12 @@ a {
           justify-content: space-between;
 }
 
+.nav-bar span {
+  font-size: 3em;
+}
+
 .nav-links {
-  width: 40%;
+  width: 30%;
 }
 
 .hebrew {
@@ -72,18 +76,22 @@ a {
           box-shadow: 1px 0px 5px 0px black;
 }
 
+.hebrew .large-container .large-container-text {
+  margin-left: 80px;
+}
+
 .hebrew .large-container .large-container-text .main-header {
   color: white;
   font-family: Myanmar Text;
-  font-size: 4em;
-  line-height: 65px;
+  font-size: 9em;
+  line-height: 142px;
   width: 4em;
 }
 
 .hebrew .large-container .large-container-text .sub-header {
   color: white;
   font-family: Myanmar Text;
-  font-size: 1.5em;
+  font-size: 5em;
 }
 
 .featured-project {
@@ -97,7 +105,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 2em 0em;
+  margin: 10em 3em;
 }
 
 .featured-project .section-tag {
@@ -110,13 +118,14 @@ a {
 .featured-project header {
   font-family: Myanmar Text;
   font-weight: bold;
+  font-size: 3em;
   font-size: 2em;
 }
 
 .featured-project svg {
   width: 90%;
   height: auto;
-  margin-bottom: 3em;
+  margin-bottom: 5em;
 }
 
 .featured-project .section-data {
@@ -130,6 +139,7 @@ a {
   background-color: #420084;
   -webkit-box-shadow: 1px 0px 5px 0px black;
           box-shadow: 1px 0px 5px 0px black;
+  margin: 10em 0;
 }
 
 .background-container header {
@@ -190,7 +200,7 @@ a {
 }
 
 .skill-set {
-  margin: 3em 1em;
+  margin: 6em 5em;
 }
 
 .skill-set .skill-panel {
@@ -200,10 +210,11 @@ a {
 }
 
 .skill-set .skill-panel .written {
-  padding: 1em;
+  padding: 2em;
   display: -ms-grid;
   display: grid;
   grid-template: 'tag' 'header' 'description';
+  margin-bottom: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -248,6 +259,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 40em;
 }
 
 .skill-set .skill-panel .illustration svg {
@@ -260,9 +272,7 @@ a {
   background-color: #420084;
 }
 
-@media (min-width: 480px) {
-  .nav-bar h1 {
-    font-size: 1.2em;
-  }
+#projects .project-panel {
+  height: 40vh;
 }
 /*# sourceMappingURL=index.css.map */

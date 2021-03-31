@@ -22,13 +22,13 @@ a{
     background-color: $secondary;
     
     color:white;
-    padding: .5em 1em;
+    padding: 1em 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     h1{
         font-family: Myanmar Text;
-        font-size: .9em;
+        font-size: 3em;
         font-weight: bold;
         margin:0;
         vertical-align: center;
@@ -39,10 +39,13 @@ a{
         display: flex;
         justify-content: space-between;
     }
+    span{
+        font-size: 3em;
+    }
     
 }
 .nav-links{
-    width: 40%;
+    width: 30%;
 }
 .hebrew{
     height: 100%;
@@ -56,18 +59,20 @@ a{
         box-shadow:  $panel-shadow;
     
         .large-container-text{
+            margin-left:80px;
             .main-header{
                 color:white;
                 font-family: Myanmar Text;
-                font-size: 4em;
-                line-height: 65px;
+                font-size: 9em;
+                line-height: 142px;
                 width:4em;
+                
             }
         
             .sub-header{
                 color:white;
                 font-family: Myanmar Text;
-                font-size: 1.5em;
+                font-size: 5em;
             }
         }
     
@@ -80,25 +85,27 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 2em 0em;
+    margin: 10em 3em;
 
     .section-tag{
         color:$tag-color;
         font-family: Myanmar Text;
         font-weight: bold;
-        font-size: 1.5em;;
+        font-size: 1.5em;
     }
 
     header{
         font-family: Myanmar Text;
         font-weight: bold;
+        font-size: 3em;
+        
         font-size: $section-header-size;
     }
 
     svg{
         width: 90%;
         height: auto;
-        margin-bottom: 3em;
+        margin-bottom: 5em;
     }
 
     .section-data{
@@ -112,6 +119,7 @@ a{
 .background-container{
     background-color: $primary;
     box-shadow:  $panel-shadow;
+    margin: 10em 0;
 
     header{
         color:white;
@@ -170,7 +178,8 @@ a{
 }
 
 .skill-set{
-    margin: 3em 1em;
+    margin: 6em 5em;
+    
 
 
     .skill-panel{
@@ -180,10 +189,10 @@ a{
         
 
         .written{
-            padding:1em;
+            padding:2em;
             display: grid;
             grid-template: 'tag' 'header' 'description';
-
+            margin-bottom: 3em;
             display: flex;
             flex-direction: column;
 
@@ -219,6 +228,7 @@ a{
             display: flex;
             justify-content: center;
             align-items: center;
+            min-height: 40em;
             svg{
 
                 width:90%;
@@ -234,13 +244,10 @@ a{
     background-color: $primary;
 }
 
-
-@media(min-width:480px){
-    .nav-bar{
-        h1{
-            font-size: 1.2em;
-        }
-        
+#projects{
+    .project-panel{
+        height: 40vh;
     }
     
 }
+
