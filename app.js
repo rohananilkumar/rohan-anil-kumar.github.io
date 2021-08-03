@@ -136,6 +136,7 @@ var MyProjects = (function(){
         link: null
     }
 
+
     var jsonParser = Object.create(Project,{
         title:{value:'Custom JSON Parser'},
         description:{value:'A C# class library for parsing complex json objects.'},
@@ -299,10 +300,28 @@ var MyProjects = (function(){
         image:{value: 'Images/project-placeholder.jpg'},
         sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/vidly-nodejs'}})]},
         tags:{value:['NodeJS', 'Express', 'MongoDB']}
+    });
+
+    var reserveStaurant = Object.create(Project,{
+        title:{value:'reserveStaurant'},
+        description:{value:'A restaurant app (nodejs Endpoints) that helps to get menu, order and pay without a waiter.'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"Source"},link:{value:'https://github.com/rohananilkumar/reservStaurant-endpoints'}})]},
+        tags:{value:['NodeJS', 'Express', 'MongoDB']}
+    });
+
+    var digitializePortfolio = Object.create(Project,{
+        title:{value:'Digitialize Porfolio'},
+        description:{value:'A store where you can buy portfolios. Source is classified. (by far my best looking website)'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"site"},link:{value:'https://digitialize-portfolio.web.app/home/pre-designed'}})]},
+        tags:{value:['ReactJS', 'Redux', 'Firebase']}
     })
 
 
     var projectList=[
+        digitializePortfolio,
+        reserveStaurant,
         jsonParser,
         libraryManager,
         flashChat,
