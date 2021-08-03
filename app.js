@@ -318,6 +318,22 @@ var MyProjects = (function(){
         tags:{value:['ReactJS', 'Redux', 'Firebase']}
     })
 
+    var greatQuotesApp = Object.create(Project,{
+        title:{value:'Great Quotes'},
+        description:{value:'A simple app that can add and view quotes. This is a practice project'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"source"},link:{value:'https://github.com/rohananilkumar/great-quotes-react'}}),Object.create(Source,{text:{value:"site"},link:{value:'https://great-quotes-app.web.app/quotes'}})]},
+        tags:{value:['ReactJS', 'Redux', 'Firebase']}
+    });
+
+    var reactMeals = Object.create(Project,{
+        title:{value:'React Meals'},
+        description:{value:'React app that simulates ordering food. This is a practice project'},
+        image:{value: 'Images/project-placeholder.jpg'},
+        sources: {value: [Object.create(Source,{text:{value:"source"},link:{value:'https://github.com/rohananilkumar/react-meals'}}),Object.create(Source,{text:{value:"site"},link:{value:'https://food-order-app-817a3.web.app/'}})]},
+        tags:{value:['ReactJS', 'Redux', 'Firebase']}
+    })
+
 
     var projectList=[
         digitializePortfolio,
@@ -327,6 +343,8 @@ var MyProjects = (function(){
         flashChat,
         mediaStream,
         clima,
+        greatQuotesApp,
+        reactMeals,
         vidly,
         vidlyNodejs,
         contactBook,
